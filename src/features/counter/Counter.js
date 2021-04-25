@@ -3,6 +3,7 @@ import { useDispatch, useSelector } from "react-redux";
 
 function Counter() {
   // read from the Redux store
+  //We're calling useSelector with a callback function, and returning the items key from our Redux store state.
   const items = useSelector((state) => state.items);
 
   // gives us the dispatch function to send actions to the Redux store
